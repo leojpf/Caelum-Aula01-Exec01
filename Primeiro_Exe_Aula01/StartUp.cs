@@ -13,7 +13,9 @@ namespace Primeiro_Exe_Aula01
         {
             //app.Use(Contagem);
             //app.Run(RespondeAoMundo);
+            app.UseDeveloperExceptionPage();
             app.UseMvcWithDefaultRoute();
+            
         }
 
         public Task Contagem(HttpContext context, Func<Task> next)
